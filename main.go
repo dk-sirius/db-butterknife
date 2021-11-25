@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/dk-sirius/db-butterknife/cmd"
+import "github.com/dk-sirius/db-decl/cmd"
 
 func main() {
   cmd.Execute()

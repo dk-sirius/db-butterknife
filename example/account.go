@@ -1,8 +1,8 @@
 package example
 
-import "github.com/dk-sirius/db-butterknife/example/tmp"
+import "github.com/dk-sirius/db-decl/example/tmp"
 
-//go:generate tools bknife -n wxf -t Account
+//go:generate tools db -n wxf -t Account
 
 type A func()
 

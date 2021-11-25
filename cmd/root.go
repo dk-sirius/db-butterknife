@@ -50,7 +50,7 @@ func Execute() {
 
 func init() {
 	cobra.OnInitialize(initConfig)
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.db-butterknife.yaml)")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.db-decl.yaml)")
 }
 
 // initConfig reads in config file and ENV variables if set.
@@ -66,9 +66,9 @@ func initConfig() {
 			os.Exit(1)
 		}
 
-		// Search config in home directory with name ".db-butterknife" (without extension).
+		// Search config in home directory with name ".db-decl" (without extension).
 		viper.AddConfigPath(home)
-		viper.SetConfigName(".db-butterknife")
+		viper.SetConfigName(".db-decl")
 	}
 
 	viper.AutomaticEnv() // read in environment variables that match
