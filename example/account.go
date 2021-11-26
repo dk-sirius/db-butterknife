@@ -2,7 +2,7 @@ package example
 
 import "github.com/dk-sirius/db-decl/example/tmp"
 
-//go:generate tools db -n wxf -t Account
+//go:generate db-decl gen -n wxf -t Account
 
 type A func()
 

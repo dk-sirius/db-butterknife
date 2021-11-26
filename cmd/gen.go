@@ -25,7 +25,7 @@ import (
 var forkCmd = &cobra.Command{
 	Use:   "gen",
 	Short: "generate db table",
-	Long:  `fork -n a -t b  -f define file.`,
+	Long:  `gen -n a -t b  -f define file.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		Exec(cmd, db.Generate)
 	},
